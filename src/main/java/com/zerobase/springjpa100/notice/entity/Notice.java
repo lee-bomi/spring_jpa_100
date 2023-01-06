@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -27,4 +28,8 @@ public class Notice {
     private LocalDateTime udtDate;
     private int hits;
     private int likes;
+
+    private boolean deleted;
+
+    private LocalDateTime deletedDate;
 }
